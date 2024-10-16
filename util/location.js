@@ -1,5 +1,4 @@
-const GOOGLE_MAPS_API_KEY = "AIzaSyAyGAq2ZdMXrXKMB5afE0EcoT85-IczhJM";
-const HERE_API_KEY = "zClRhBP4zZLqcWAgEvG11a7AgxmT2U18hyg-0Ym31D4";
+import { GOOGLE_MAPS_API_KEY, HERE_API_KEY } from "../config.js";
 export function getMapPreview(lat, lng) {
   const imagePreviewURL = `https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&key=${GOOGLE_MAPS_API_KEY}`;
   console.log(imagePreviewURL);
